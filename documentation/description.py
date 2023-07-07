@@ -1,18 +1,17 @@
 # API Description
 api_description = """
-Have fun using API. 🕺🏿🎉
+Watch API helps you do awesome stuff. 🚀
 
-1. Sneakers
+## Products
 
-You will be allowed to:
+You will be able to:
 
-- Create new product.
-- Get sneakers list.
+* Create new product.
+* Get products list.
 
-2. Customer 
-You'll be able to login 
+## Customer 
+You'll be able to signup and login
 
-3. Transaction
-You'll be authorized to list and create transactions
-
+## Transaction
+You'll be able to list and create transactions
 """

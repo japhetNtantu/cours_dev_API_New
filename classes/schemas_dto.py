@@ -11,7 +11,7 @@ class Product_POST_Body (BaseModel):
 class Product_PATCH_Body (BaseModel):
     newFeatured: bool
 
-class Product_GETID_Response(BaseModel): # format de sortie (response)TY
+class Product_GETID_Response(BaseModel): # format de sortie (response)
     id: int
     name: str
     price: str
@@ -30,3 +30,4 @@ class Customer_response (BaseModel):
     # not sending the password
     class Config: # Importante pour la traduction ORM -> DTO
         orm_mode= True      
+        
