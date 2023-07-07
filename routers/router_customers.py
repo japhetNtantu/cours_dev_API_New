@@ -1,10 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
+from sqlalchemy import create_engine
 from sqlalchemy.exc import IntegrityError
 from classes import models_orm, schemas_dto, database
 import utilities
-from typing import List
-
 
 router = APIRouter(
     prefix='/customers',
@@ -34,7 +33,7 @@ async def create_customer(
             detail="User already exists" 
         )
     
-@router.get('', response_model=List[schemas_dto.Customer_response])
+@router.get('', response_model=list[schemas_dto.Customer_response])
 async def get_all_customers(cursor: Session = Depends(database.get_cursor)):
     all_customers = cursor.query(models_orm.Customers).all()
     return all_customers

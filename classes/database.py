@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-DATABASE_URL = 'postgres://sneakersdb_user:2bmkHH8Oh3VRMFzKUuGGhNZwftEbjf5K@dpg-cijtd4tgkuvjvn7i47mg-a.frankfurt-postgres.render.com/sneakersdb'
+DATABASE_URL = 'postgresql://jardindedendb_user:JrFSfPObNaBpXw0TTln7DZILqmGH8MGr@dpg-ciimtjdgkuvojjbv1s40-a.frankfurt-postgres.render.com/jardindedendb'
 
 # equivalent à un "connect"
 database_engine = create_engine(DATABASE_URL)
