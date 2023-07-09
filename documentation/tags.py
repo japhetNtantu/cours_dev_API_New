@@ -1,7 +1,7 @@
 # Liste des tags utilises dans la doc
 tags_metadata = [
     {
-        "name": "Produc",
+        "name": "Produc ",
         "description": "Manage Products. So _fancy_ they have their own docs.",
         "externalDocs": {
             "description": "Items external docs",
