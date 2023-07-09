@@ -1,8 +1,8 @@
 # Liste des tags utilises dans la doc
 tags_metadata = [
     {
-        "name": "Produc ",
-        "description": "Manage Products. So _fancy_ they have their own docs.",
+        "name": "Sneakers",
+        "description": "Happy feet. Happy life, get your shoes together.",
         "externalDocs": {
             "description": "Items external docs",
             "url": "https://fastapi.tiangolo.com/",
@@ -10,7 +10,7 @@ tags_metadata = [
     },
     {
         "name": "Customers",
-        "description": "Create and list customers of our API",
+        "description": "listing customers of the API",
     },
     {
         "name": "Transactions",
