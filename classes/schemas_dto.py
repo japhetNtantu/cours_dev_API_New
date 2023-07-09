@@ -8,6 +8,7 @@ class Product_POST_Body (BaseModel):
     name: str
     price: float
     model: str
+    color: str
     featured: str
 
 class Product_PATCH_Body (BaseModel):
@@ -18,6 +19,7 @@ class Product_GETID_Response(BaseModel): # format de sortie (response)
     name: str
     price: str
     model: str
+    color: str
     featured: str
     class Config: # Lors des réponses, nous avons souvant à utiliser les données sortie de notre database. La Config ORM nous permet de "choisir" les columnes à montrer. 
         orm_mode= True

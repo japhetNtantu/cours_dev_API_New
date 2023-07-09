@@ -6,11 +6,13 @@ Have fun using API. 🕺🏿🎉
 
 You will be allowed to:
 
-- Create new product.
+- Create new sneakers.
 - Get sneakers list.
 
 2. Customer 
-You'll be able to login 
+You'll be able to login by:
+-using your email
+-password
 
 3. Transaction
 You'll be authorized to list and create transactions

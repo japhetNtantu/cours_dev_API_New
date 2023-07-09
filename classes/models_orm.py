@@ -11,6 +11,7 @@ class Products(Base):
     name = Column(String, nullable=False)
     price = Column(Numeric, nullable=False)
     model = Column(String, nullable=False)
+    color = Column(String, nullable=False)
     featured = Column(String, nullable=False) # server_default permet de donner une valeur par default
     
 
