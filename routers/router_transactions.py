@@ -14,7 +14,7 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth")
 
 router= APIRouter(
     prefix="/transactions",
-    tags=["Transaction"]
+    tags=["Transactions"]
 )
 
 # Exercice  post a new transaction
