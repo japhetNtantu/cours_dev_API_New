@@ -5,8 +5,8 @@ from pydantic import BaseModel
 # Représente la structure de la données (data type) en entrée ou en sortie de notre API.
 
 class Product_POST_Body (BaseModel):
-    Name: str
-    Price: float
+    name: str
+    price: float
     model: str
     featured: str
 

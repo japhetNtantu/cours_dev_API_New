@@ -43,7 +43,7 @@ async def get_product(product_id:int, cursor:Session= Depends(get_cursor)):
 # CREATE / POST 
 @router.post('', status_code=status.HTTP_201_CREATED)
 async def create_product(payload: schemas_dto.Product_POST_Body, cursor:Session= Depends(get_cursor)):
-    new_product = models_orm.Products(name=payload.productName, price=payload.productPrice) # build the insert
+    new_product = models_orm.Products(name=payload.name, price=payload.price, model=payload.model, featured=payload.featured) # build the insert
     cursor.add(new_product) # Send the query
     cursor.commit() #Save the staged change
     cursor.refresh(new_product)
