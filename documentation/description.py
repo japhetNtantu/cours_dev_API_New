@@ -11,8 +11,8 @@ You will be allowed to:
 
 2. Customer 
 You'll be able to login by:
--using your email
--password
+- using your email
+- password
 
 3. Transaction
 You'll be authorized to list and create transactions
