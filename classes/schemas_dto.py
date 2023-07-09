@@ -15,7 +15,8 @@ class Product_GETID_Response(BaseModel): # format de sortie (response)
     id: int
     name: str
     price: str
-    featured: bool
+    model: str
+    featured: str
     class Config: # Lors des réponses, nous avons souvant à utiliser les données sortie de notre database. La Config ORM nous permet de "choisir" les columnes à montrer. 
         orm_mode= True
 
