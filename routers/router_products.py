@@ -62,7 +62,7 @@ async def delete_product(product_id:int, cursor:Session=Depends(get_cursor)):
     else: 
         raise HTTPException (
             status_code=status.HTTP_404_NOT_FOUND,
-            detail=f'Ne corresponding product with id: {product_id}'
+            detail=f'No corresponding product with id: {product_id}'
         )
 
 # Update

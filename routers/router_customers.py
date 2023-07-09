@@ -31,7 +31,7 @@ async def create_customer(
     except IntegrityError: # Se déclanche si un utilisateur possède déjà la même email (unique=True)
         raise HTTPException(
             status_code=status.HTTP_409_CONFLICT,
-            detail="User already exists" 
+            detail="Customer already exists" 
         )
     
 @router.get('', response_model=List[schemas_dto.Customer_response])
