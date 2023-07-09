@@ -6,7 +6,6 @@ from classes import models_orm
 import utilities
 from sqlalchemy.exc import IntegrityError
 
-# Ajout du schema Oauth sur un endpoint précis (petit cadenas)
 # Le boutton "Authorize" ouvre un formulaire en popup pour capturer les credentials
 from pydantic.typing import Annotated
 from fastapi.security import OAuth2PasswordBearer
@@ -15,7 +14,7 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth")
 
 router= APIRouter(
     prefix="/transactions",
-    tags=["Transactions"]
+    tags=["Transaction"]
 )
 
 # Exercice  post a new transaction
