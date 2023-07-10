@@ -2,7 +2,7 @@
 tags_metadata = [
     {
         "name": "Sneakers",
-        "description": "Happy feet. Happy life, get your shoes together.",
+        "description": "Happy feet, Happy life. Get your shoes together.",
         "externalDocs": {
             "description": "Items external docs",
             "url": "https://fastapi.tiangolo.com/",

@@ -65,7 +65,7 @@ async def delete_product(product_id:int, cursor:Session=Depends(get_cursor)):
             detail=f'No corresponding product with id: {product_id}'
         )
 
-# Update
+# Update a product
 @router.patch('/{product_id}')
 async def update_product(product_id: int, payload:schemas_dto.Product_PATCH_Body, cursor:Session=Depends(get_cursor)):
     # trouver le produit correspodant
