@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
+
 DATABASE_URL = 'postgresql://sneakersdb_4ftu_user:tu7YskBJajZXXIV4Ep9t5Peq17U75KWv@dpg-cijv1q6nqql0l1ugfpsg-a.frankfurt-postgres.render.com/sneakersdb_4ftu'
 
 # equivalent à un "connect"
